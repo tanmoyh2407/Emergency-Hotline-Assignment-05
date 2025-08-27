@@ -23,12 +23,12 @@
 <body class="roboto_font">
     <header>
         <!-- nav section start -->
-        <nav class="flex justify-between w-auto h-[100px] mx-16 my-3.5">
-            <div class="left_side flex items-center gap-2.5">
-                <img class="w-[50px] h-[50px]" src="./assets/logo.png" alt="logo">
-                <h1 class="text-2xl font-bold text-[#006747]">Emergency <br> Service</h1>
+        <nav class="flex flex-col lg:flex-row justify-between w-auto h-auto lg:mx-16 lg:my-3.5">
+            <div class="left_side mt-2 mb-2 ml-2 flex justify-b items-center gap-2.5">
+                <img class="w-[40px] h-[40px] lg:w-[50px] lg:h-[50px]" src="./assets/logo.png" alt="logo">
+                <h1 class="text-xl lg:text-2xl font-bold text-[#006747]">Emergency <br> Service</h1>
             </div>
-            <div class="right_side flex items-center gap-5">
+            <div class="right_side flex items-center mb-3 gap-1 lg:gap-5">
                 <div
                     class="flex gap-1.5 justify-center items-center h-[52px] w-[120px] bg-[rgb(65,255,107)]/10 rounded-3xl">
                     <span class="font-bold text-xl">0</span>
@@ -46,22 +46,21 @@
             </div>
         </nav>
         <!-- nav section end -->
-         
+
         <!-- banner section start -->
         <section class="banner_section flex flex-col items-center p-5 bg-[radial-gradient(circle,#006747,#013223)]">
             <img class="h-[100px] w-[100px]" src="./assets/logo-dark.png" alt="Dark Logo">
-            <h1 class="text-white text-4xl font-semibold mt-3.5">জরুরি সেবা ডিরেক্টরি</h1>
-            <p class="text-white text-xl font-semibold mt-3.5">Government Emergency Services at Your Fingertip – A
-                Project by
-                Government of the People’s Republic of Bangladesh</p>
+            <h1 class="text-center text-white text-[30px] lg:text-4xl font-semibold mt-3.5">জরুরি সেবা ডিরেক্টরি</h1>
+            <p class="text-center text-white text-[18px] lg:text-xl font-semibold mt-3.5">Government Emergency Services at Your Fingertip – A
+                Project by Government of the People’s Republic of Bangladesh</p>
         </section>
         <!-- banner section end -->
     </header>
     <main>
         <!-- card & call history section start -->
-        <section class="card_call_history_section bg-[#F5FFF6] flex justify-between gap-7 p-12">
+        <section class="card_call_history_section bg-[#F5FFF6] flex flex-col lg:flex-row justify-between gap-7 p-12">
             <!-- Cards Part (Left Side) -->
-            <div class="w-[75%] grid grid-cols-3 gap-7">
+            <div class="w-full lg:w-[75%] grid md:grid-cols-2 lg:grid-cols-3 gap-7">
                 <div class="emergency-card bg-white rounded-2xl p-6 shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)]">
                     <div class="flex justify-between items-center mb-4">
                         <img class="w-[60px] h-[60px] rounded bg-[#FFE3E2] p-3 rounded-2xl" src="./assets/emergency.png"
@@ -85,14 +84,55 @@
                 </div>
                 <div class="emergency-card bg-white rounded-2xl p-6 shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)]">
                     <div class="flex justify-between items-center mb-4">
-                        <img class="w-[60px] h-[60px] rounded bg-[#FFE3E2] p-3 rounded-2xl" src="./assets/emergency.png"
+                        <img class="w-[60px] h-[60px] rounded bg-[#DFEFFF] p-3 rounded-2xl" src="./assets/police.png"
                             alt="Emergencey">
                         <i class="fa-regular fa-heart text-3xl text-[#5C5C5C]"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-[#111111] mb-1">জাতীয় জরুরি সেবা</h3>
-                    <p class="text-lg text-[#5C5C5C] mb-4">National Emergency</p>
+                    <h3 class="text-2xl font-bold text-[#111111] mb-1">পুলিশ</h3>
+                    <p class="text-lg text-[#5C5C5C] mb-4">Police</p>
                     <h1 class="text-3xl font-bold text-[#111111]">999</h1>
-                    <p class="text-lg text-[#5C5C5C] bg-[#F2F2F2] inline-block rounded-full px-4 py-1.5 mb-4">সার্বজনীন
+                    <p class="text-lg text-[#5C5C5C] bg-[#F2F2F2] inline-block rounded-full px-4 py-1.5 mb-4">পুলিশ</p>
+                    <div class="flex justify-between gap-4">
+                        <button
+                            class="copy-btn flex-1 border border-gray-300 py-2 px-4 rounded-2xl text-[#5C5C5C] hover:bg-gray-200">
+                            <i class="fa-regular fa-copy text-[#5C5C5C]"></i>
+                            Copy</button>
+                        <button class="bg-[#00A63E] flex-1 text-white py-2 px-4 rounded-2xl hover:bg-[#018f35]">
+                            <i class="fa-solid fa-phone"></i>
+                            Call</button>
+                    </div>
+                </div>
+                <div class="emergency-card bg-white rounded-2xl p-6 shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)]">
+                    <div class="flex justify-between items-center mb-4">
+                        <img class="w-[60px] h-[60px] rounded bg-[#FFE3E2] p-3 rounded-2xl" src="./assets/fire-service.png"
+                            alt="Emergencey">
+                        <i class="fa-regular fa-heart text-3xl text-[#5C5C5C]"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-[#111111] mb-1">ফায়ার সার্ভিস</h3>
+                    <p class="text-lg text-[#5C5C5C] mb-4">Fire Service</p>
+                    <h1 class="text-3xl font-bold text-[#111111]">999</h1>
+                    <p class="text-lg text-[#5C5C5C] bg-[#F2F2F2] inline-block rounded-full px-4 py-1.5 mb-4">ফায়ার
+                    </p>
+                    <div class="flex justify-between gap-4">
+                        <button
+                            class="copy-btn flex-1 border border-gray-300 py-2 px-4 rounded-2xl text-[#5C5C5C] hover:bg-gray-200">
+                            <i class="fa-regular fa-copy text-[#5C5C5C]"></i>
+                            Copy</button>
+                        <button class="bg-[#00A63E] flex-1 text-white py-2 px-4 rounded-2xl hover:bg-[#018f35]">
+                            <i class="fa-solid fa-phone"></i>
+                            Call</button>
+                    </div>
+                </div>
+                <div class="emergency-card bg-white rounded-2xl p-6 shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)]">
+                    <div class="flex justify-between items-center mb-4">
+                        <img class="w-[60px] h-[60px] rounded bg-[#FFE3E2] p-3 rounded-2xl" src="./assets/ambulance.png"
+                            alt="Emergencey">
+                        <i class="fa-regular fa-heart text-3xl text-[#5C5C5C]"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-[#111111] mb-1">অ্যাম্বুলেন্স</h3>
+                    <p class="text-lg text-[#5C5C5C] mb-4">Ambulance</p>
+                    <h1 class="text-3xl font-bold text-[#111111]">1994-999999</h1>
+                    <p class="text-lg text-[#5C5C5C] bg-[#F2F2F2] inline-block rounded-full px-4 py-1.5 mb-4">স্বাস্থ্য
                     </p>
                     <div class="flex justify-between gap-4">
                         <button
@@ -110,10 +150,10 @@
                             alt="Emergencey">
                         <i class="fa-regular fa-heart text-3xl text-[#5C5C5C]"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-[#111111] mb-1">জাতীয় জরুরি সেবা</h3>
-                    <p class="text-lg text-[#5C5C5C] mb-4">National Emergency</p>
-                    <h1 class="text-3xl font-bold text-[#111111]">999</h1>
-                    <p class="text-lg text-[#5C5C5C] bg-[#F2F2F2] inline-block rounded-full px-4 py-1.5 mb-4">সার্বজনীন
+                    <h3 class="text-2xl font-bold text-[#111111] mb-1">নারী ও শিশু সহায়তা</h3>
+                    <p class="text-lg text-[#5C5C5C] mb-4">Women & Child Helpline</p>
+                    <h1 class="text-3xl font-bold text-[#111111]">109</h1>
+                    <p class="text-lg text-[#5C5C5C] bg-[#F2F2F2] inline-block rounded-full px-4 py-1.5 mb-4">সহায়তা
                     </p>
                     <div class="flex justify-between gap-4">
                         <button
@@ -131,10 +171,10 @@
                             alt="Emergencey">
                         <i class="fa-regular fa-heart text-3xl text-[#5C5C5C]"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-[#111111] mb-1">জাতীয় জরুরি সেবা</h3>
-                    <p class="text-lg text-[#5C5C5C] mb-4">National Emergency</p>
-                    <h1 class="text-3xl font-bold text-[#111111]">999</h1>
-                    <p class="text-lg text-[#5C5C5C] bg-[#F2F2F2] inline-block rounded-full px-4 py-1.5 mb-4">সার্বজনীন
+                    <h3 class="text-2xl font-bold text-[#111111] mb-1">দুদক</h3>
+                    <p class="text-lg text-[#5C5C5C] mb-4">Anti-Corruption</p>
+                    <h1 class="text-3xl font-bold text-[#111111]">106</h1>
+                    <p class="text-lg text-[#5C5C5C] bg-[#F2F2F2] inline-block rounded-full px-4 py-1.5 mb-4">সরকারি
                     </p>
                     <div class="flex justify-between gap-4">
                         <button
@@ -152,10 +192,10 @@
                             alt="Emergencey">
                         <i class="fa-regular fa-heart text-3xl text-[#5C5C5C]"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-[#111111] mb-1">জাতীয় জরুরি সেবা</h3>
-                    <p class="text-lg text-[#5C5C5C] mb-4">National Emergency</p>
-                    <h1 class="text-3xl font-bold text-[#111111]">999</h1>
-                    <p class="text-lg text-[#5C5C5C] bg-[#F2F2F2] inline-block rounded-full px-4 py-1.5 mb-4">সার্বজনীন
+                    <h3 class="text-2xl font-bold text-[#111111] mb-1">বিদ্যুৎ বিভ্রাট</h3>
+                    <p class="text-lg text-[#5C5C5C] mb-4">Electricity Outage</p>
+                    <h1 class="text-3xl font-bold text-[#111111]">16216</h1>
+                    <p class="text-lg text-[#5C5C5C] bg-[#F2F2F2] inline-block rounded-full px-4 py-1.5 mb-4">বিদ্যুৎ
                     </p>
                     <div class="flex justify-between gap-4">
                         <button
@@ -173,10 +213,10 @@
                             alt="Emergencey">
                         <i class="fa-regular fa-heart text-3xl text-[#5C5C5C]"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-[#111111] mb-1">জাতীয় জরুরি সেবা</h3>
-                    <p class="text-lg text-[#5C5C5C] mb-4">National Emergency</p>
-                    <h1 class="text-3xl font-bold text-[#111111]">999</h1>
-                    <p class="text-lg text-[#5C5C5C] bg-[#F2F2F2] inline-block rounded-full px-4 py-1.5 mb-4">সার্বজনীন
+                    <h3 class="text-2xl font-bold text-[#111111] mb-1">ব্র্যাক</h3>
+                    <p class="text-lg text-[#5C5C5C] mb-4">Brac</p>
+                    <h1 class="text-3xl font-bold text-[#111111]">16445</h1>
+                    <p class="text-lg text-[#5C5C5C] bg-[#F2F2F2] inline-block rounded-full px-4 py-1.5 mb-4">এনজিও
                     </p>
                     <div class="flex justify-between gap-4">
                         <button
@@ -194,52 +234,10 @@
                             alt="Emergencey">
                         <i class="fa-regular fa-heart text-3xl text-[#5C5C5C]"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-[#111111] mb-1">জাতীয় জরুরি সেবা</h3>
-                    <p class="text-lg text-[#5C5C5C] mb-4">National Emergency</p>
-                    <h1 class="text-3xl font-bold text-[#111111]">999</h1>
-                    <p class="text-lg text-[#5C5C5C] bg-[#F2F2F2] inline-block rounded-full px-4 py-1.5 mb-4">সার্বজনীন
-                    </p>
-                    <div class="flex justify-between gap-4">
-                        <button
-                            class="copy-btn flex-1 border border-gray-300 py-2 px-4 rounded-2xl text-[#5C5C5C] hover:bg-gray-200">
-                            <i class="fa-regular fa-copy text-[#5C5C5C]"></i>
-                            Copy</button>
-                        <button class="bg-[#00A63E] flex-1 text-white py-2 px-4 rounded-2xl hover:bg-[#018f35]">
-                            <i class="fa-solid fa-phone"></i>
-                            Call</button>
-                    </div>
-                </div>
-                <div class="emergency-card bg-white rounded-2xl p-6 shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)]">
-                    <div class="flex justify-between items-center mb-4">
-                        <img class="w-[60px] h-[60px] rounded bg-[#FFE3E2] p-3 rounded-2xl" src="./assets/emergency.png"
-                            alt="Emergencey">
-                        <i class="fa-regular fa-heart text-3xl text-[#5C5C5C]"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-[#111111] mb-1">জাতীয় জরুরি সেবা</h3>
-                    <p class="text-lg text-[#5C5C5C] mb-4">National Emergency</p>
-                    <h1 class="text-3xl font-bold text-[#111111]">999</h1>
-                    <p class="text-lg text-[#5C5C5C] bg-[#F2F2F2] inline-block rounded-full px-4 py-1.5 mb-4">সার্বজনীন
-                    </p>
-                    <div class="flex justify-between gap-4">
-                        <button
-                            class="copy-btn flex-1 border border-gray-300 py-2 px-4 rounded-2xl text-[#5C5C5C] hover:bg-gray-200">
-                            <i class="fa-regular fa-copy text-[#5C5C5C]"></i>
-                            Copy</button>
-                        <button class="bg-[#00A63E] flex-1 text-white py-2 px-4 rounded-2xl hover:bg-[#018f35]">
-                            <i class="fa-solid fa-phone"></i>
-                            Call</button>
-                    </div>
-                </div>
-                <div class="emergency-card bg-white rounded-2xl p-6 shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)]">
-                    <div class="flex justify-between items-center mb-4">
-                        <img class="w-[60px] h-[60px] rounded bg-[#FFE3E2] p-3 rounded-2xl" src="./assets/emergency.png"
-                            alt="Emergencey">
-                        <i class="fa-regular fa-heart text-3xl text-[#5C5C5C]"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-[#111111] mb-1">জাতীয় জরুরি সেবা</h3>
-                    <p class="text-lg text-[#5C5C5C] mb-4">National Emergency</p>
-                    <h1 class="text-3xl font-bold text-[#111111]">999</h1>
-                    <p class="text-lg text-[#5C5C5C] bg-[#F2F2F2] inline-block rounded-full px-4 py-1.5 mb-4">সার্বজনীন
+                    <h3 class="text-2xl font-bold text-[#111111] mb-1">বাংলাদেশ রেলওয়ে</h3>
+                    <p class="text-lg text-[#5C5C5C] mb-4">Bangladesh Railway</p>
+                    <h1 class="text-3xl font-bold text-[#111111]">163</h1>
+                    <p class="text-lg text-[#5C5C5C] bg-[#F2F2F2] inline-block rounded-full px-4 py-1.5 mb-4">পরিবহন
                     </p>
                     <div class="flex justify-between gap-4">
                         <button
@@ -254,13 +252,15 @@
             </div>
 
             <!-- Call History Part (Right Side) -->
-            <div class="w-[25%] bg-white rounded-2xl p-6 shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] flex justify-between items-center">
+            <div
+                class="w-full lg:w-[25%] bg-white rounded-2xl p-6 shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] flex justify-between items-center">
                 <div class="border-2 flex items-center gap-1.5">
                     <i class="fa-regular fa-clock"></i>
                     <h1>Call History</h1>
                 </div>
                 <div class="border-2">
-                    <button class="bg-[#00A63E] text-white py-3 px-9 rounded-2xl text-xl hover:bg-[#018f35]">Clear</button>
+                    <button
+                        class="bg-[#00A63E] text-white py-3 px-9 rounded-2xl text-xl hover:bg-[#018f35]">Clear</button>
                 </div>
             </div>
         </section>
