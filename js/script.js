@@ -27,7 +27,7 @@ function handleCallClick(btn) {
     const coinAfterPerCall = totalCoin - 20;
     document.getElementById('total_coin').innerText = coinAfterPerCall;
 
-// Call History Add...
+    // Call History Add...
     const historyList = document.getElementById('call_history_list');
     const timeNow = new Date().toLocaleTimeString();
 
@@ -47,8 +47,14 @@ function handleCallClick(btn) {
             ${timeNow}
         </div>`;
 
-        historyList.append(historyItem);
+    historyList.append(historyItem);
 }
+
+// Call history clear button event
+
+    document.getElementById('clear_history_btn').addEventListener("click", function(){
+        document.getElementById('call_history_list').innerHTML = '';
+    });
 
 // Handle copy button function
 
