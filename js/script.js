@@ -62,7 +62,7 @@ document.querySelectorAll('.copy-btn').forEach(function (button) {
     button.addEventListener("click", function () {
         const number = button.closest('.emergency-card').querySelector('.call_number').innerText;
         navigator.clipboard.writeText(number);
-        alert(`Copy this number: ${number}`);
+        alert(`নাম্বার কপি হয়েছে: ${number}`);
 
         const totalCopy = parseInt(document.getElementById('total_copy').innerText);
         const totalCopyUpdate = totalCopy + 1;
