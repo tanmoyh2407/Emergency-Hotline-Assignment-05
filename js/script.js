@@ -8,7 +8,7 @@ document.querySelectorAll('.heart_count').forEach(function(heart){
     })
 })
 
-// Call button function
+// Handle call button function
 
 function handleCallClick(btn) {
         const totalCoin = parseInt(document.getElementById('total_coin').innerText);
@@ -28,21 +28,12 @@ function handleCallClick(btn) {
         document.getElementById('total_coin').innerText = coinAfterPerCall;
         }
 
-        
+// Handle copy button function
 
-// document.querySelectorAll('.call_btn').forEach(function(call){
-//     call.addEventListener("click", function(){
-
-        
-        
-//         const totalCoin = parseInt(document.getElementById('total_coin').innerText);
-
-//         if(totalCoin < 20){
-//             alert("Not enough coin");
-//             return;
-//         }
-
-//         const coinAfterPerCall = totalCoin - 20;
-//         document.getElementById('total_coin').innerText = coinAfterPerCall;
-//     })
-// })
+document.querySelectorAll('.copy-btn').forEach(function(button) {
+    button.addEventListener("click", function() {
+        const number = button.closest('.emergency-card').querySelector('.call_number').innerText;
+        navigator.clipboard.writeText(number);
+        alert(`Copy this number: ${number}`);
+    });
+});
